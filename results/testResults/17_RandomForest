@@ -1,0 +1,87 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     mmcfeatures-weka.filters.unsupervised.attribute.Remove-R4,6,10,12,18-19,22-23,25
+Instances:    801
+Attributes:   17
+              mood
+              danceability
+              energy
+              loudness
+              speechiness
+              acousticness
+              instrumentalness
+              valence
+              duration_ms
+              time_signature
+              track_duration
+              track_end_of_fade_in
+              track_start_of_fade_out
+              track_tempo_confidence
+              track_time_signature
+              track_key_confidence
+              track_mode_confidence
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+Attribute mappings:
+
+Model attributes                   	    Incoming attributes
+-----------------------------------	    ----------------
+(nominal) mood                     	--> 1 (nominal) mood
+(numeric) danceability             	--> 2 (numeric) danceability
+(numeric) energy                   	--> 3 (numeric) energy
+(numeric) loudness                 	--> 5 (numeric) loudness
+(numeric) speechiness              	--> 7 (numeric) speechiness
+(numeric) acousticness             	--> 8 (numeric) acousticness
+(numeric) instrumentalness         	--> 9 (numeric) instrumentalness
+(numeric) valence                  	--> 11 (numeric) valence
+(numeric) duration_ms              	--> 13 (numeric) duration_ms
+(numeric) time_signature           	--> 14 (numeric) time_signature
+(numeric) track_duration           	--> 15 (numeric) track_duration
+(numeric) track_end_of_fade_in     	--> 16 (numeric) track_end_of_fade_in
+(numeric) track_start_of_fade_out  	--> 17 (numeric) track_start_of_fade_out
+(numeric) track_tempo_confidence   	--> 20 (numeric) track_tempo_confidence
+(numeric) track_time_signature     	--> 21 (numeric) track_time_signature
+(numeric) track_key_confidence     	--> 24 (numeric) track_key_confidence
+(numeric) track_mode_confidence    	--> 26 (numeric) track_mode_confidence
+
+
+Time taken to build model: 0.46 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.41 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         553               92.0133 %
+Incorrectly Classified Instances        48                7.9867 %
+Kappa statistic                          0.8401
+Mean absolute error                      0.1544
+Root mean squared error                  0.2644
+Relative absolute error                 30.8627 %
+Root relative squared error             52.8495 %
+Total Number of Instances              601     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.905    0.065    0.930      0.905    0.918      0.840    0.960     0.960     0
+                 0.935    0.095    0.911      0.935    0.923      0.840    0.960     0.952     1
+Weighted Avg.    0.920    0.080    0.920      0.920    0.920      0.840    0.960     0.956     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 267  28 |   a = 0
+  20 286 |   b = 1
+

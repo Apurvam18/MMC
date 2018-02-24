@@ -1,0 +1,102 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     mmcfeatures-weka.filters.unsupervised.attribute.Remove-R4-6,9-10,12-13,16-26
+Instances:    801
+Attributes:   8
+              mood
+              danceability
+              energy
+              speechiness
+              acousticness
+              valence
+              time_signature
+              track_duration
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+J48 pruned tree
+------------------
+
+energy <= 0.596
+|   speechiness <= 0.0535
+|   |   danceability <= 0.655: 0 (274.0/2.0)
+|   |   danceability > 0.655
+|   |   |   acousticness <= 0.0605: 1 (4.0)
+|   |   |   acousticness > 0.0605: 0 (17.0/1.0)
+|   speechiness > 0.0535
+|   |   acousticness <= 0.119: 1 (12.0)
+|   |   acousticness > 0.119: 0 (29.0/10.0)
+energy > 0.596
+|   valence <= 0.533
+|   |   speechiness <= 0.0434
+|   |   |   danceability <= 0.556
+|   |   |   |   acousticness <= 0.0015
+|   |   |   |   |   speechiness <= 0.0344: 1 (3.0)
+|   |   |   |   |   speechiness > 0.0344: 0 (5.0/1.0)
+|   |   |   |   acousticness > 0.0015: 0 (50.0/4.0)
+|   |   |   danceability > 0.556
+|   |   |   |   speechiness <= 0.0288: 0 (12.0/1.0)
+|   |   |   |   speechiness > 0.0288: 1 (17.0/2.0)
+|   |   speechiness > 0.0434: 1 (101.0/20.0)
+|   valence > 0.533
+|   |   speechiness <= 0.0358
+|   |   |   track_duration <= 175.45333
+|   |   |   |   energy <= 0.647: 1 (2.0)
+|   |   |   |   energy > 0.647: 0 (4.0)
+|   |   |   track_duration > 175.45333
+|   |   |   |   energy <= 0.633: 0 (2.0)
+|   |   |   |   energy > 0.633: 1 (37.0/3.0)
+|   |   speechiness > 0.0358: 1 (232.0/8.0)
+
+Number of Leaves  : 	16
+
+Size of the tree : 	31
+
+Attribute mappings:
+
+Model attributes          	    Incoming attributes
+--------------------------	    ----------------
+(nominal) mood            	--> 1 (nominal) mood
+(numeric) danceability    	--> 2 (numeric) danceability
+(numeric) energy          	--> 3 (numeric) energy
+(numeric) speechiness     	--> 7 (numeric) speechiness
+(numeric) acousticness    	--> 8 (numeric) acousticness
+(numeric) valence         	--> 11 (numeric) valence
+(numeric) time_signature  	--> 14 (numeric) time_signature
+(numeric) track_duration  	--> 15 (numeric) track_duration
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.08 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         178               89.899  %
+Incorrectly Classified Instances        20               10.101  %
+Kappa statistic                          0.7978
+Mean absolute error                      0.1429
+Root mean squared error                  0.3045
+Relative absolute error                 28.5689 %
+Root relative squared error             60.8782 %
+Total Number of Instances              198     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.847    0.050    0.943      0.847    0.892      0.802    0.892     0.893     0
+                 0.950    0.153    0.864      0.950    0.905      0.802    0.892     0.855     1
+Weighted Avg.    0.899    0.102    0.903      0.899    0.899      0.802    0.892     0.874     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 83 15 |  a = 0
+  5 95 |  b = 1
+

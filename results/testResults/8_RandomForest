@@ -1,0 +1,69 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     mmcfeatures-weka.filters.unsupervised.attribute.Remove-R4-6,9-10,12-13,16-26
+Instances:    801
+Attributes:   8
+              mood
+              danceability
+              energy
+              speechiness
+              acousticness
+              valence
+              time_signature
+              track_duration
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+Attribute mappings:
+
+Model attributes          	    Incoming attributes
+--------------------------	    ----------------
+(nominal) mood            	--> 1 (nominal) mood
+(numeric) danceability    	--> 2 (numeric) danceability
+(numeric) energy          	--> 3 (numeric) energy
+(numeric) speechiness     	--> 7 (numeric) speechiness
+(numeric) acousticness    	--> 8 (numeric) acousticness
+(numeric) valence         	--> 11 (numeric) valence
+(numeric) time_signature  	--> 14 (numeric) time_signature
+(numeric) track_duration  	--> 15 (numeric) track_duration
+
+
+Time taken to build model: 0.13 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.41 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         541               90.0166 %
+Incorrectly Classified Instances        60                9.9834 %
+Kappa statistic                          0.8001
+Mean absolute error                      0.143 
+Root mean squared error                  0.2705
+Relative absolute error                 28.6005 %
+Root relative squared error             54.0669 %
+Total Number of Instances              601     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.881    0.082    0.912      0.881    0.897      0.801    0.956     0.953     0
+                 0.918    0.119    0.889      0.918    0.904      0.801    0.956     0.947     1
+Weighted Avg.    0.900    0.101    0.901      0.900    0.900      0.801    0.956     0.950     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 260  35 |   a = 0
+  25 281 |   b = 1
+

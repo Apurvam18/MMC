@@ -1,0 +1,114 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     mmcfeatures-weka.filters.unsupervised.attribute.Remove-R4,6,10,12,18-19,22-23,25
+Instances:    801
+Attributes:   17
+              mood
+              danceability
+              energy
+              loudness
+              speechiness
+              acousticness
+              instrumentalness
+              valence
+              duration_ms
+              time_signature
+              track_duration
+              track_end_of_fade_in
+              track_start_of_fade_out
+              track_tempo_confidence
+              track_time_signature
+              track_key_confidence
+              track_mode_confidence
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         2.8684 * (normalized) danceability
+ +       2.7585 * (normalized) energy
+ +       0.4265 * (normalized) loudness
+ +       2.7165 * (normalized) speechiness
+ +      -1.4283 * (normalized) acousticness
+ +       0.59   * (normalized) instrumentalness
+ +       1.7179 * (normalized) valence
+ +      -0.7377 * (normalized) duration_ms
+ +       0.7282 * (normalized) time_signature
+ +      -0.7377 * (normalized) track_duration
+ +      -0.8657 * (normalized) track_end_of_fade_in
+ +      -0.4133 * (normalized) track_start_of_fade_out
+ +       0.55   * (normalized) track_tempo_confidence
+ +       0.7282 * (normalized) track_time_signature
+ +       0.2757 * (normalized) track_key_confidence
+ +      -1.0088 * (normalized) track_mode_confidence
+ -       5.0597
+
+Number of kernel evaluations: 30804 (75.231% cached)
+
+
+Attribute mappings:
+
+Model attributes                   	    Incoming attributes
+-----------------------------------	    ----------------
+(nominal) mood                     	--> 1 (nominal) mood
+(numeric) danceability             	--> 2 (numeric) danceability
+(numeric) energy                   	--> 3 (numeric) energy
+(numeric) loudness                 	--> 5 (numeric) loudness
+(numeric) speechiness              	--> 7 (numeric) speechiness
+(numeric) acousticness             	--> 8 (numeric) acousticness
+(numeric) instrumentalness         	--> 9 (numeric) instrumentalness
+(numeric) valence                  	--> 11 (numeric) valence
+(numeric) duration_ms              	--> 13 (numeric) duration_ms
+(numeric) time_signature           	--> 14 (numeric) time_signature
+(numeric) track_duration           	--> 15 (numeric) track_duration
+(numeric) track_end_of_fade_in     	--> 16 (numeric) track_end_of_fade_in
+(numeric) track_start_of_fade_out  	--> 17 (numeric) track_start_of_fade_out
+(numeric) track_tempo_confidence   	--> 20 (numeric) track_tempo_confidence
+(numeric) track_time_signature     	--> 21 (numeric) track_time_signature
+(numeric) track_key_confidence     	--> 24 (numeric) track_key_confidence
+(numeric) track_mode_confidence    	--> 26 (numeric) track_mode_confidence
+
+
+Time taken to build model: 0.11 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 1.53 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         550               91.5141 %
+Incorrectly Classified Instances        51                8.4859 %
+Kappa statistic                          0.8301
+Mean absolute error                      0.0849
+Root mean squared error                  0.2913
+Relative absolute error                 16.9667 %
+Root relative squared error             58.2361 %
+Total Number of Instances              601     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.888    0.059    0.936      0.888    0.911      0.831    0.915     0.886     0
+                 0.941    0.112    0.897      0.941    0.919      0.831    0.915     0.874     1
+Weighted Avg.    0.915    0.086    0.916      0.915    0.915      0.831    0.915     0.880     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 262  33 |   a = 0
+  18 288 |   b = 1
+

@@ -1,0 +1,125 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     mmcfeatures-weka.filters.unsupervised.attribute.Remove-R4-6,9-10,12-13,16-26
+Instances:    801
+Attributes:   8
+              mood
+              danceability
+              energy
+              speechiness
+              acousticness
+              valence
+              time_signature
+              track_duration
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.07516806881783761
+    Node 2    -8.145504415549203
+    Node 3    5.878543524523937
+    Node 4    5.10614070228718
+    Node 5    -7.154095910579151
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    0.07516921002053235
+    Node 2    8.14479365583872
+    Node 3    -5.877534034705169
+    Node 4    -5.105965287945944
+    Node 5    7.15390918393362
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -1.81081581360729
+    Attrib danceability    0.8442324023565767
+    Attrib energy    2.812281059977949
+    Attrib speechiness    6.219753976938245
+    Attrib acousticness    2.195678708145271
+    Attrib valence    9.238278925757319
+    Attrib time_signature    0.36457424738110655
+    Attrib track_duration    -6.077601738334937
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    2.4970083454782523
+    Attrib danceability    -6.032064691157254
+    Attrib energy    -6.970396663464642
+    Attrib speechiness    -0.4549915758976599
+    Attrib acousticness    2.932080919309646
+    Attrib valence    3.4667718084289927
+    Attrib time_signature    -0.7100572486850811
+    Attrib track_duration    3.2111309355003317
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    0.23620818622498208
+    Attrib danceability    -3.366539154460338
+    Attrib energy    -7.681337832898969
+    Attrib speechiness    -15.357816351566694
+    Attrib acousticness    4.809526081307488
+    Attrib valence    0.8933756045410474
+    Attrib time_signature    -6.438189394271257
+    Attrib track_duration    8.618074565453796
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -2.6919565839278152
+    Attrib danceability    9.351236023869731
+    Attrib energy    -1.402206573976933
+    Attrib speechiness    9.605853620430215
+    Attrib acousticness    -12.565197211891139
+    Attrib valence    -0.2998542638375152
+    Attrib time_signature    -0.5806101550397709
+    Attrib track_duration    4.91858090869629
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+Attribute mappings:
+
+Model attributes          	    Incoming attributes
+--------------------------	    ----------------
+(nominal) mood            	--> 1 (nominal) mood
+(numeric) danceability    	--> 2 (numeric) danceability
+(numeric) energy          	--> 3 (numeric) energy
+(numeric) speechiness     	--> 7 (numeric) speechiness
+(numeric) acousticness    	--> 8 (numeric) acousticness
+(numeric) valence         	--> 11 (numeric) valence
+(numeric) time_signature  	--> 14 (numeric) time_signature
+(numeric) track_duration  	--> 15 (numeric) track_duration
+
+
+Time taken to build model: 0.5 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.63 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         556               92.5125 %
+Incorrectly Classified Instances        45                7.4875 %
+Kappa statistic                          0.8501
+Mean absolute error                      0.1116
+Root mean squared error                  0.2654
+Relative absolute error                 22.3125 %
+Root relative squared error             53.0639 %
+Total Number of Instances              601     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.902    0.052    0.943      0.902    0.922      0.851    0.961     0.964     0
+                 0.948    0.098    0.909      0.948    0.928      0.851    0.961     0.956     1
+Weighted Avg.    0.925    0.076    0.926      0.925    0.925      0.851    0.961     0.960     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 266  29 |   a = 0
+  16 290 |   b = 1
+

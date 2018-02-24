@@ -1,0 +1,103 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     mmcfeatures-weka.filters.unsupervised.attribute.Remove-R4,6,8-10,12-26
+Instances:    801
+Attributes:   6
+              mood
+              danceability
+              energy
+              loudness
+              speechiness
+              valence
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -1.4731358724089771
+    Node 2    3.0742385056125654
+    Node 3    2.997169789474619
+    Node 4    -3.7989044428324523
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    1.4731358724089847
+    Node 2    -3.0742385056125916
+    Node 3    -2.9971697894746203
+    Node 4    3.798904442832451
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -3.3463665968296703
+    Attrib danceability    -4.939609415675412
+    Attrib energy    -10.143212279548973
+    Attrib loudness    3.614384838403468
+    Attrib speechiness    -2.1323511626891203
+    Attrib valence    -0.5396468465752543
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.1324377940264054
+    Attrib danceability    -11.40592651574502
+    Attrib energy    -8.303084083717497
+    Attrib loudness    8.444597869986975
+    Attrib speechiness    -4.300634140407086
+    Attrib valence    4.871712730124659
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    1.3301041367528055
+    Attrib danceability    2.422850497432464
+    Attrib energy    3.76884679043022
+    Attrib loudness    10.629797181952771
+    Attrib speechiness    12.043466869432805
+    Attrib valence    5.783199287931896
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+Attribute mappings:
+
+Model attributes        	    Incoming attributes
+------------------------	    ----------------
+(nominal) mood          	--> 1 (nominal) mood
+(numeric) danceability  	--> 2 (numeric) danceability
+(numeric) energy        	--> 3 (numeric) energy
+(numeric) loudness      	--> 5 (numeric) loudness
+(numeric) speechiness   	--> 7 (numeric) speechiness
+(numeric) valence       	--> 11 (numeric) valence
+
+
+Time taken to build model: 0.37 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.09 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         177               89.3939 %
+Incorrectly Classified Instances        21               10.6061 %
+Kappa statistic                          0.7881
+Mean absolute error                      0.1461
+Root mean squared error                  0.2814
+Relative absolute error                 29.219  %
+Root relative squared error             56.2568 %
+Total Number of Instances              198     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.939    0.150    0.860      0.939    0.898      0.791    0.947     0.946     0
+                 0.850    0.061    0.934      0.850    0.890      0.791    0.947     0.937     1
+Weighted Avg.    0.894    0.105    0.897      0.894    0.894      0.791    0.947     0.941     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 92  6 |  a = 0
+ 15 85 |  b = 1
+

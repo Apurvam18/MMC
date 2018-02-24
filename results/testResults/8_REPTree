@@ -1,0 +1,82 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.REPTree -- -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     mmcfeatures-weka.filters.unsupervised.attribute.Remove-R4-6,9-10,12-13,16-26
+Instances:    801
+Attributes:   8
+              mood
+              danceability
+              energy
+              speechiness
+              acousticness
+              valence
+              time_signature
+              track_duration
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+
+REPTree
+============
+
+energy < 0.6 : 0 (228/22) [108/7]
+energy >= 0.6
+|   danceability < 0.6
+|   |   valence < 0.54
+|   |   |   speechiness < 0.07
+|   |   |   |   acousticness < 0.03
+|   |   |   |   |   danceability < 0.55 : 0 (20/6) [12/2]
+|   |   |   |   |   danceability >= 0.55 : 1 (9/1) [2/0]
+|   |   |   |   acousticness >= 0.03 : 0 (32/2) [14/2]
+|   |   |   speechiness >= 0.07 : 1 (13/3) [9/2]
+|   |   valence >= 0.54 : 1 (40/5) [22/2]
+|   danceability >= 0.6 : 1 (192/13) [100/8]
+
+Size of the tree : 13
+Attribute mappings:
+
+Model attributes          	    Incoming attributes
+--------------------------	    ----------------
+(nominal) mood            	--> 1 (nominal) mood
+(numeric) danceability    	--> 2 (numeric) danceability
+(numeric) energy          	--> 3 (numeric) energy
+(numeric) speechiness     	--> 7 (numeric) speechiness
+(numeric) acousticness    	--> 8 (numeric) acousticness
+(numeric) valence         	--> 11 (numeric) valence
+(numeric) time_signature  	--> 14 (numeric) time_signature
+(numeric) track_duration  	--> 15 (numeric) track_duration
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.45 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         520               86.5225 %
+Incorrectly Classified Instances        81               13.4775 %
+Kappa statistic                          0.7307
+Mean absolute error                      0.1977
+Root mean squared error                  0.3351
+Relative absolute error                 39.5366 %
+Root relative squared error             66.9858 %
+Total Number of Instances              601     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.895    0.163    0.841      0.895    0.867      0.732    0.900     0.853     0
+                 0.837    0.105    0.892      0.837    0.863      0.732    0.900     0.881     1
+Weighted Avg.    0.865    0.134    0.867      0.865    0.865      0.732    0.900     0.867     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 264  31 |   a = 0
+  50 256 |   b = 1
+

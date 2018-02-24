@@ -1,0 +1,470 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     mmcfeatures
+Instances:    801
+Attributes:   26
+              mood
+              danceability
+              energy
+              key
+              loudness
+              mode
+              speechiness
+              acousticness
+              instrumentalness
+              liveness
+              valence
+              tempo
+              duration_ms
+              time_signature
+              track_duration
+              track_end_of_fade_in
+              track_start_of_fade_out
+              track_loudness
+              track_tempo
+              track_tempo_confidence
+              track_time_signature
+              track_time_signature_confidence
+              track_key
+              track_key_confidence
+              track_mode
+              track_mode_confidence
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -1.6486271350513322
+    Node 2    4.159872757372394
+    Node 3    -3.27370723963886
+    Node 4    -9.887609889290466
+    Node 5    4.210387062913519
+    Node 6    -9.6224743724528
+    Node 7    8.114134610094046
+    Node 8    1.7653579011984557
+    Node 9    -6.603131342931185
+    Node 10    5.125102503371192
+    Node 11    5.419234986906032
+    Node 12    6.46209330867912
+    Node 13    3.0511456488283595
+    Node 14    11.433097129558126
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    1.6487941806219761
+    Node 2    -4.166352607141672
+    Node 3    3.2747039118094836
+    Node 4    9.888326738708486
+    Node 5    -4.2130202719293255
+    Node 6    9.622830251072152
+    Node 7    -8.11506415422254
+    Node 8    -1.763075345794403
+    Node 9    6.602666980533938
+    Node 10    -5.120898679494419
+    Node 11    -5.418922132641967
+    Node 12    -6.463797814253314
+    Node 13    -3.048749285043803
+    Node 14    -11.435233859293081
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -0.5886674115176485
+    Attrib danceability    -3.407720852282873
+    Attrib energy    -0.4023008190083764
+    Attrib key    -1.751912757303281
+    Attrib loudness    1.1929746299753594
+    Attrib mode    -0.6022766131379658
+    Attrib speechiness    -2.2003146984827486
+    Attrib acousticness    1.5668334655710283
+    Attrib instrumentalness    -2.041312118943259
+    Attrib liveness    -0.48775406051776704
+    Attrib valence    -1.2991692027976136
+    Attrib tempo    -1.8900361098273264
+    Attrib duration_ms    1.8611300155179749
+    Attrib time_signature    -0.5027832812308909
+    Attrib track_duration    1.8974165751576193
+    Attrib track_end_of_fade_in    2.2374178376130303
+    Attrib track_start_of_fade_out    1.2387259767361951
+    Attrib track_loudness    1.2377671713101184
+    Attrib track_tempo    -1.8133302548549455
+    Attrib track_tempo_confidence    4.830869443617683
+    Attrib track_time_signature    -0.5184136148161664
+    Attrib track_time_signature_confidence    -2.619917014466179
+    Attrib track_key    -1.6995648498675828
+    Attrib track_key_confidence    -1.8177399005552457
+    Attrib track_mode    -0.5684603481393042
+    Attrib track_mode_confidence    -0.6708892945698146
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -0.3884035784520915
+    Attrib danceability    1.190390022197936
+    Attrib energy    -0.08625368129557957
+    Attrib key    1.1506236551622422
+    Attrib loudness    -0.7836703601362808
+    Attrib mode    -1.2681125259134294
+    Attrib speechiness    0.9700835091761085
+    Attrib acousticness    -0.8233609725062417
+    Attrib instrumentalness    1.2111815880730226
+    Attrib liveness    -0.8130852799618136
+    Attrib valence    -0.12661901045900206
+    Attrib tempo    0.3100577314328268
+    Attrib duration_ms    1.6733370486558823
+    Attrib time_signature    0.41354982261471396
+    Attrib track_duration    1.7043942915375145
+    Attrib track_end_of_fade_in    0.7912797194812585
+    Attrib track_start_of_fade_out    1.7680272597347675
+    Attrib track_loudness    -0.8131409676242675
+    Attrib track_tempo    0.24270068300494627
+    Attrib track_tempo_confidence    -0.6662185612092155
+    Attrib track_time_signature    0.34864464897205105
+    Attrib track_time_signature_confidence    0.7040559056353934
+    Attrib track_key    1.1882370505712232
+    Attrib track_key_confidence    -0.9209994012694122
+    Attrib track_mode    -1.2498609165860375
+    Attrib track_mode_confidence    -1.0193129900290003
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -2.0377938332129024
+    Attrib danceability    4.517858346400705
+    Attrib energy    6.679328865538833
+    Attrib key    -5.205087585326435
+    Attrib loudness    2.264181167128081
+    Attrib mode    -1.9317030090550287
+    Attrib speechiness    4.363550996922862
+    Attrib acousticness    -1.2822342407042548
+    Attrib instrumentalness    7.312088465973517
+    Attrib liveness    -2.2645869535634033
+    Attrib valence    -3.5076040911199167
+    Attrib tempo    -2.670396135113662
+    Attrib duration_ms    1.6540174303834023
+    Attrib time_signature    -1.4805982356710408
+    Attrib track_duration    1.6232938213051717
+    Attrib track_end_of_fade_in    -3.464881076958537
+    Attrib track_start_of_fade_out    2.8911244546869677
+    Attrib track_loudness    2.3183965023757427
+    Attrib track_tempo    -2.60946290158011
+    Attrib track_tempo_confidence    -0.27155266988797483
+    Attrib track_time_signature    -1.5089071018897011
+    Attrib track_time_signature_confidence    1.8303100705232327
+    Attrib track_key    -5.236083743131555
+    Attrib track_key_confidence    0.667087170717444
+    Attrib track_mode    -1.907103306314634
+    Attrib track_mode_confidence    -0.8304976583650565
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.2064903660919661
+    Attrib danceability    -3.769216515393388
+    Attrib energy    -0.5702253417999407
+    Attrib key    0.1000309252671041
+    Attrib loudness    0.4815140018790762
+    Attrib mode    -1.0782584445806
+    Attrib speechiness    -2.3156874169425796
+    Attrib acousticness    3.507381818185912
+    Attrib instrumentalness    -0.8623140667385837
+    Attrib liveness    -0.7469873150854457
+    Attrib valence    -0.9503820917540869
+    Attrib tempo    1.0391124368812477
+    Attrib duration_ms    0.929299519039425
+    Attrib time_signature    -0.2053046748877828
+    Attrib track_duration    0.8838325102140875
+    Attrib track_end_of_fade_in    2.080750006324362
+    Attrib track_start_of_fade_out    0.5172970151823445
+    Attrib track_loudness    0.5062076973179698
+    Attrib track_tempo    1.028346986179039
+    Attrib track_tempo_confidence    4.855145993511823
+    Attrib track_time_signature    -0.19336629754780182
+    Attrib track_time_signature_confidence    -2.870988972158162
+    Attrib track_key    0.06843178693238565
+    Attrib track_key_confidence    -2.2469122689577516
+    Attrib track_mode    -1.0612232784195148
+    Attrib track_mode_confidence    1.5507849549338732
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    -4.854859237029709
+    Attrib danceability    7.800231427096706
+    Attrib energy    1.2262777208920623
+    Attrib key    0.39907108897726074
+    Attrib loudness    3.176179207923975
+    Attrib mode    1.4683725501451865
+    Attrib speechiness    4.805249810973525
+    Attrib acousticness    0.43093581801235625
+    Attrib instrumentalness    0.47529508661405734
+    Attrib liveness    1.9193402564251985
+    Attrib valence    -0.38882026502991907
+    Attrib tempo    4.467333318236808
+    Attrib duration_ms    -0.46215706033447135
+    Attrib time_signature    1.0639299002860452
+    Attrib track_duration    -0.42136004764514784
+    Attrib track_end_of_fade_in    1.9705611348755767
+    Attrib track_start_of_fade_out    0.26196557362216566
+    Attrib track_loudness    3.1637925396419875
+    Attrib track_tempo    4.514375859809558
+    Attrib track_tempo_confidence    3.588542991929138
+    Attrib track_time_signature    1.0435306577714498
+    Attrib track_time_signature_confidence    0.9070810937312206
+    Attrib track_key    0.4267964638044002
+    Attrib track_key_confidence    -5.014854166550563
+    Attrib track_mode    1.4467870631180697
+    Attrib track_mode_confidence    -2.9502641697869616
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    0.9808594605347228
+    Attrib danceability    0.10950457359950362
+    Attrib energy    2.4253325722312202
+    Attrib key    -3.1970147397527886
+    Attrib loudness    2.662706366136504
+    Attrib mode    -0.11951235002750553
+    Attrib speechiness    -5.266941358451691
+    Attrib acousticness    4.605899787233656
+    Attrib instrumentalness    0.07502547730595585
+    Attrib liveness    3.285948890032385
+    Attrib valence    -5.636783863482049
+    Attrib tempo    4.650428045138968
+    Attrib duration_ms    5.102481638148585
+    Attrib time_signature    -1.3413206195199445
+    Attrib track_duration    5.0868771176411665
+    Attrib track_end_of_fade_in    -0.27260627371629653
+    Attrib track_start_of_fade_out    4.41721185752759
+    Attrib track_loudness    2.6740760777685177
+    Attrib track_tempo    4.6907315599694055
+    Attrib track_tempo_confidence    -6.34554926625433
+    Attrib track_time_signature    -1.3023002426102066
+    Attrib track_time_signature_confidence    -0.323823682196017
+    Attrib track_key    -3.286861867820632
+    Attrib track_key_confidence    4.421048861936633
+    Attrib track_mode    -0.16350115529068118
+    Attrib track_mode_confidence    2.7122174665274947
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    -0.23459772050449118
+    Attrib danceability    -0.13767224932390373
+    Attrib energy    -0.26536454709075036
+    Attrib key    -0.7122652058929041
+    Attrib loudness    -0.5269770755802395
+    Attrib mode    -0.1215349474431825
+    Attrib speechiness    -0.8527812923360286
+    Attrib acousticness    0.24018377984482786
+    Attrib instrumentalness    0.13388500284240962
+    Attrib liveness    2.5796704411804647
+    Attrib valence    0.8302232053037029
+    Attrib tempo    -0.3238177028338719
+    Attrib duration_ms    0.749807441997613
+    Attrib time_signature    -0.24187102487044856
+    Attrib track_duration    0.7595626624333475
+    Attrib track_end_of_fade_in    0.34328725305263824
+    Attrib track_start_of_fade_out    0.5092479678684234
+    Attrib track_loudness    -0.5816477514175974
+    Attrib track_tempo    -0.3920047277660629
+    Attrib track_tempo_confidence    -0.675486639844338
+    Attrib track_time_signature    -0.2766243156570635
+    Attrib track_time_signature_confidence    -0.20378925951124935
+    Attrib track_key    -0.7408186721967963
+    Attrib track_key_confidence    0.05008675675088092
+    Attrib track_mode    -0.13646455721859663
+    Attrib track_mode_confidence    -0.9524256420192384
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -1.2516861320692483
+    Attrib danceability    4.000172883679398
+    Attrib energy    5.750773989960193
+    Attrib key    -0.575262154198725
+    Attrib loudness    6.168509444378371
+    Attrib mode    -2.6567618813235856
+    Attrib speechiness    12.985191131741209
+    Attrib acousticness    1.9035664577386142
+    Attrib instrumentalness    0.7103799174123533
+    Attrib liveness    -3.354328752127441
+    Attrib valence    6.057998072475578
+    Attrib tempo    -2.7402060432954705
+    Attrib duration_ms    -2.9350952055550756
+    Attrib time_signature    2.491821794313312
+    Attrib track_duration    -2.966294277521143
+    Attrib track_end_of_fade_in    1.9739419804545857
+    Attrib track_start_of_fade_out    -1.2770291124363944
+    Attrib track_loudness    6.18820020005435
+    Attrib track_tempo    -2.7102588471340545
+    Attrib track_tempo_confidence    0.49694377887340635
+    Attrib track_time_signature    2.4052063125760483
+    Attrib track_time_signature_confidence    -0.16140306414498412
+    Attrib track_key    -0.5575652928574025
+    Attrib track_key_confidence    3.467193750249633
+    Attrib track_mode    -2.701192369557034
+    Attrib track_mode_confidence    -0.21188417130615267
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.5281698791758725
+    Attrib danceability    -3.6845746861601443
+    Attrib energy    -0.2710113481086041
+    Attrib key    -2.0771680917933084
+    Attrib loudness    1.1416728963299516
+    Attrib mode    -0.6862264857628435
+    Attrib speechiness    -2.435584096488811
+    Attrib acousticness    1.9979025652996456
+    Attrib instrumentalness    -1.9379296113861721
+    Attrib liveness    -1.0543568652950739
+    Attrib valence    -1.5560798582114534
+    Attrib tempo    -2.4635835817414375
+    Attrib duration_ms    2.274947649808615
+    Attrib time_signature    0.2378329116534995
+    Attrib track_duration    2.260533531505667
+    Attrib track_end_of_fade_in    2.824726995270238
+    Attrib track_start_of_fade_out    1.6188591606768061
+    Attrib track_loudness    1.1295828759770765
+    Attrib track_tempo    -2.4861011839002587
+    Attrib track_tempo_confidence    5.68134934135508
+    Attrib track_time_signature    0.19172918881741308
+    Attrib track_time_signature_confidence    -2.8860837433001802
+    Attrib track_key    -2.0529540383747076
+    Attrib track_key_confidence    -2.3204598241970578
+    Attrib track_mode    -0.6449288837612763
+    Attrib track_mode_confidence    -0.6907437533794833
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    0.5025979458333449
+    Attrib danceability    -0.5113434162306498
+    Attrib energy    -4.330976234128751
+    Attrib key    -0.9882045362614418
+    Attrib loudness    2.055605106550425
+    Attrib mode    -0.24932669684057543
+    Attrib speechiness    -4.435525468534327
+    Attrib acousticness    4.210118330356592
+    Attrib instrumentalness    -2.8746853580355296
+    Attrib liveness    -0.03772977367252029
+    Attrib valence    -4.323773274138813
+    Attrib tempo    1.743157842443368
+    Attrib duration_ms    2.1946328248223765
+    Attrib time_signature    -3.1009148452050264
+    Attrib track_duration    2.1858597030004034
+    Attrib track_end_of_fade_in    1.976338165951014
+    Attrib track_start_of_fade_out    1.2833255138365538
+    Attrib track_loudness    2.0485522820267783
+    Attrib track_tempo    1.7377507648902548
+    Attrib track_tempo_confidence    -0.9330675429679922
+    Attrib track_time_signature    -3.097333828530635
+    Attrib track_time_signature_confidence    0.8431173070251354
+    Attrib track_key    -0.9831240586477978
+    Attrib track_key_confidence    -0.3868650179420591
+    Attrib track_mode    -0.23075575616539715
+    Attrib track_mode_confidence    -0.04626260672504636
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    0.03476021193163795
+    Attrib danceability    -1.1542665153258485
+    Attrib energy    -4.04802408464791
+    Attrib key    0.5129101330011904
+    Attrib loudness    0.5418465274520524
+    Attrib mode    1.233821709196392
+    Attrib speechiness    -4.27888505347927
+    Attrib acousticness    0.312901053727445
+    Attrib instrumentalness    0.6494892851215304
+    Attrib liveness    -1.9739022420631895
+    Attrib valence    1.6520033034625483
+    Attrib tempo    -1.0265657245272557
+    Attrib duration_ms    2.516186498696248
+    Attrib time_signature    -1.6610083927996002
+    Attrib track_duration    2.486612245055878
+    Attrib track_end_of_fade_in    -0.5259187173353375
+    Attrib track_start_of_fade_out    1.836089148444456
+    Attrib track_loudness    0.6344122616513331
+    Attrib track_tempo    -0.9438355019947764
+    Attrib track_tempo_confidence    2.530981133933652
+    Attrib track_time_signature    -1.5966729320737945
+    Attrib track_time_signature_confidence    -0.09140080312032674
+    Attrib track_key    0.5488638614341685
+    Attrib track_key_confidence    -4.43749935035251
+    Attrib track_mode    1.3246889126384718
+    Attrib track_mode_confidence    -0.29490861177131145
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    0.1146144513027162
+    Attrib danceability    -0.8693270102563013
+    Attrib energy    0.48011904177974596
+    Attrib key    -0.21546989471072267
+    Attrib loudness    0.3778379536467176
+    Attrib mode    -0.8643005160762729
+    Attrib speechiness    -2.1389095191652023
+    Attrib acousticness    0.5225486903328723
+    Attrib instrumentalness    -0.28875334337679853
+    Attrib liveness    0.20128325121669705
+    Attrib valence    2.2302888567677694
+    Attrib tempo    -0.21412848783699306
+    Attrib duration_ms    0.978920595816966
+    Attrib time_signature    -0.15873789939938562
+    Attrib track_duration    0.9847979535095425
+    Attrib track_end_of_fade_in    -0.4408464884020402
+    Attrib track_start_of_fade_out    0.5212321785991274
+    Attrib track_loudness    0.3704833580840815
+    Attrib track_tempo    -0.18636695299792244
+    Attrib track_tempo_confidence    3.03375972150143
+    Attrib track_time_signature    -0.09882286925148842
+    Attrib track_time_signature_confidence    -0.886512084418832
+    Attrib track_key    -0.19101083520616965
+    Attrib track_key_confidence    0.12163302162375753
+    Attrib track_mode    -0.9119820783556125
+    Attrib track_mode_confidence    -0.7963777171757991
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    1.7166132127108977
+    Attrib danceability    -5.659448919528067
+    Attrib energy    -7.223912879452235
+    Attrib key    -1.6823153247211937
+    Attrib loudness    -1.9318877685576001
+    Attrib mode    -1.9214806417283445
+    Attrib speechiness    -10.067759635723094
+    Attrib acousticness    5.620660062905623
+    Attrib instrumentalness    2.938639865898481
+    Attrib liveness    -2.204393915432937
+    Attrib valence    -0.5795221426991506
+    Attrib tempo    -4.075773392097382
+    Attrib duration_ms    2.284932564022369
+    Attrib time_signature    -0.7206709106272275
+    Attrib track_duration    2.2877121360148256
+    Attrib track_end_of_fade_in    0.24138501293850417
+    Attrib track_start_of_fade_out    1.2984683793602356
+    Attrib track_loudness    -1.9253724818923035
+    Attrib track_tempo    -4.090451268750337
+    Attrib track_tempo_confidence    -3.735393149956412
+    Attrib track_time_signature    -0.7669928012189517
+    Attrib track_time_signature_confidence    -2.086449395930165
+    Attrib track_key    -1.725656810118233
+    Attrib track_key_confidence    0.46878945031749714
+    Attrib track_mode    -1.9797586917310876
+    Attrib track_mode_confidence    3.017859225032515
+Class 0
+    Input
+    Node 0
+Class 1
+    Input
+    Node 1
+
+
+Time taken to build model: 2.46 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         176               88.8889 %
+Incorrectly Classified Instances        22               11.1111 %
+Kappa statistic                          0.7778
+Mean absolute error                      0.1176
+Root mean squared error                  0.3161
+Relative absolute error                 23.5218 %
+Root relative squared error             63.1942 %
+Total Number of Instances              198     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.898    0.120    0.880      0.898    0.889      0.778    0.944     0.956     0
+                 0.880    0.102    0.898      0.880    0.889      0.778    0.944     0.918     1
+Weighted Avg.    0.889    0.111    0.889      0.889    0.889      0.778    0.944     0.936     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 88 10 |  a = 0
+ 12 88 |  b = 1
+

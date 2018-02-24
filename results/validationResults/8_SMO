@@ -1,0 +1,87 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.functions.SMO -- -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -E 1.0 -C 250007" -calibrator "weka.classifiers.functions.Logistic -R 1.0E-8 -M -1 -num-decimal-places 4"
+Relation:     mmcfeatures-weka.filters.unsupervised.attribute.Remove-R4-6,9-10,12-13,16-26
+Instances:    801
+Attributes:   8
+              mood
+              danceability
+              energy
+              speechiness
+              acousticness
+              valence
+              time_signature
+              track_duration
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: 0, 1
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         3.2289 * (normalized) danceability
+ +       3.0716 * (normalized) energy
+ +       2.507  * (normalized) speechiness
+ +      -1.4946 * (normalized) acousticness
+ +       1.6852 * (normalized) valence
+ +       1.0223 * (normalized) time_signature
+ +      -1.288  * (normalized) track_duration
+ -       4.9401
+
+Number of kernel evaluations: 10078 (66.682% cached)
+
+
+Attribute mappings:
+
+Model attributes          	    Incoming attributes
+--------------------------	    ----------------
+(nominal) mood            	--> 1 (nominal) mood
+(numeric) danceability    	--> 2 (numeric) danceability
+(numeric) energy          	--> 3 (numeric) energy
+(numeric) speechiness     	--> 7 (numeric) speechiness
+(numeric) acousticness    	--> 8 (numeric) acousticness
+(numeric) valence         	--> 11 (numeric) valence
+(numeric) time_signature  	--> 14 (numeric) time_signature
+(numeric) track_duration  	--> 15 (numeric) track_duration
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.1 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         180               90.9091 %
+Incorrectly Classified Instances        18                9.0909 %
+Kappa statistic                          0.8182
+Mean absolute error                      0.0909
+Root mean squared error                  0.3015
+Relative absolute error                 18.1788 %
+Root relative squared error             60.2845 %
+Total Number of Instances              198     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.908    0.090    0.908      0.908    0.908      0.818    0.909     0.870     0
+                 0.910    0.092    0.910      0.910    0.910      0.818    0.909     0.874     1
+Weighted Avg.    0.909    0.091    0.909      0.909    0.909      0.818    0.909     0.872     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 89  9 |  a = 0
+  9 91 |  b = 1
+

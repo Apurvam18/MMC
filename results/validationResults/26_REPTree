@@ -1,0 +1,81 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.REPTree -M 2 -V 0.001 -N 3 -S 1 -L -1 -I 0.0
+Relation:     mmcfeatures
+Instances:    801
+Attributes:   26
+              mood
+              danceability
+              energy
+              key
+              loudness
+              mode
+              speechiness
+              acousticness
+              instrumentalness
+              liveness
+              valence
+              tempo
+              duration_ms
+              time_signature
+              track_duration
+              track_end_of_fade_in
+              track_start_of_fade_out
+              track_loudness
+              track_tempo
+              track_tempo_confidence
+              track_time_signature
+              track_time_signature_confidence
+              track_key
+              track_key_confidence
+              track_mode
+              track_mode_confidence
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+
+REPTree
+============
+
+energy < 0.6 : 0 (228/22) [108/7]
+energy >= 0.6
+|   danceability < 0.6
+|   |   valence < 0.54
+|   |   |   speechiness < 0.07 : 0 (61/16) [28/6]
+|   |   |   speechiness >= 0.07 : 1 (13/3) [9/2]
+|   |   valence >= 0.54 : 1 (40/5) [22/2]
+|   danceability >= 0.6 : 1 (192/13) [100/8]
+
+Size of the tree : 9
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         182               91.9192 %
+Incorrectly Classified Instances        16                8.0808 %
+Kappa statistic                          0.8385
+Mean absolute error                      0.1734
+Root mean squared error                  0.2775
+Relative absolute error                 34.665  %
+Root relative squared error             55.4908 %
+Total Number of Instances              198     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.949    0.110    0.894      0.949    0.921      0.840    0.928     0.891     0
+                 0.890    0.051    0.947      0.890    0.918      0.840    0.928     0.913     1
+Weighted Avg.    0.919    0.080    0.921      0.919    0.919      0.840    0.928     0.902     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 93  5 |  a = 0
+ 11 89 |  b = 1
+

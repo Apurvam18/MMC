@@ -1,0 +1,65 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.RandomForest -- -P 100 -I 100 -num-slots 1 -K 0 -M 1.0 -V 0.001 -S 1
+Relation:     mmcfeatures-weka.filters.unsupervised.attribute.Remove-R4,6,8-10,12-26
+Instances:    801
+Attributes:   6
+              mood
+              danceability
+              energy
+              loudness
+              speechiness
+              valence
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+RandomForest
+
+Bagging with 100 iterations and base learner
+
+weka.classifiers.trees.RandomTree -K 0 -M 1.0 -V 0.001 -S 1 -do-not-check-capabilities
+Attribute mappings:
+
+Model attributes        	    Incoming attributes
+------------------------	    ----------------
+(nominal) mood          	--> 1 (nominal) mood
+(numeric) danceability  	--> 2 (numeric) danceability
+(numeric) energy        	--> 3 (numeric) energy
+(numeric) loudness      	--> 5 (numeric) loudness
+(numeric) speechiness   	--> 7 (numeric) speechiness
+(numeric) valence       	--> 11 (numeric) valence
+
+
+Time taken to build model: 0.17 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.68 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         538               89.5175 %
+Incorrectly Classified Instances        63               10.4825 %
+Kappa statistic                          0.7902
+Mean absolute error                      0.1543
+Root mean squared error                  0.2853
+Relative absolute error                 30.8561 %
+Root relative squared error             57.0417 %
+Total Number of Instances              601     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.878    0.088    0.906      0.878    0.892      0.791    0.952     0.947     0
+                 0.912    0.122    0.886      0.912    0.899      0.791    0.952     0.950     1
+Weighted Avg.    0.895    0.105    0.895      0.895    0.895      0.791    0.952     0.948     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 259  36 |   a = 0
+  27 279 |   b = 1
+

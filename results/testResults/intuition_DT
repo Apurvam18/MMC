@@ -1,0 +1,92 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     mmcfeatures-weka.filters.unsupervised.attribute.Remove-R4,6,8-10,12-26
+Instances:    801
+Attributes:   6
+              mood
+              danceability
+              energy
+              loudness
+              speechiness
+              valence
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+J48 pruned tree
+------------------
+
+energy <= 0.596
+|   speechiness <= 0.0535
+|   |   danceability <= 0.655: 0 (274.0/2.0)
+|   |   danceability > 0.655
+|   |   |   loudness <= -9.267: 0 (11.0)
+|   |   |   loudness > -9.267
+|   |   |   |   speechiness <= 0.0384
+|   |   |   |   |   danceability <= 0.666: 1 (2.0)
+|   |   |   |   |   danceability > 0.666: 0 (5.0)
+|   |   |   |   speechiness > 0.0384: 1 (3.0)
+|   speechiness > 0.0535
+|   |   energy <= 0.24: 0 (8.0)
+|   |   energy > 0.24
+|   |   |   danceability <= 0.412: 0 (4.0)
+|   |   |   danceability > 0.412: 1 (29.0/7.0)
+energy > 0.596
+|   valence <= 0.533
+|   |   speechiness <= 0.0434
+|   |   |   danceability <= 0.556: 0 (58.0/8.0)
+|   |   |   danceability > 0.556
+|   |   |   |   speechiness <= 0.0288: 0 (12.0/1.0)
+|   |   |   |   speechiness > 0.0288: 1 (17.0/2.0)
+|   |   speechiness > 0.0434: 1 (101.0/20.0)
+|   valence > 0.533: 1 (277.0/17.0)
+
+Number of Leaves  : 	13
+
+Size of the tree : 	25
+
+Attribute mappings:
+
+Model attributes        	    Incoming attributes
+------------------------	    ----------------
+(nominal) mood          	--> 1 (nominal) mood
+(numeric) danceability  	--> 2 (numeric) danceability
+(numeric) energy        	--> 3 (numeric) energy
+(numeric) loudness      	--> 5 (numeric) loudness
+(numeric) speechiness   	--> 7 (numeric) speechiness
+(numeric) valence       	--> 11 (numeric) valence
+
+
+Time taken to build model: 0.02 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.52 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         539               89.6839 %
+Incorrectly Classified Instances        62               10.3161 %
+Kappa statistic                          0.7932
+Mean absolute error                      0.1547
+Root mean squared error                  0.302 
+Relative absolute error                 30.923  %
+Root relative squared error             60.376  %
+Total Number of Instances              601     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.844    0.052    0.940      0.844    0.889      0.797    0.911     0.894     0
+                 0.948    0.156    0.863      0.948    0.903      0.797    0.911     0.877     1
+Weighted Avg.    0.897    0.105    0.901      0.897    0.896      0.797    0.911     0.886     
+
+=== Confusion Matrix ===
+
+   a   b   <-- classified as
+ 249  46 |   a = 0
+  16 290 |   b = 1
+

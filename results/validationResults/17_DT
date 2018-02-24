@@ -1,0 +1,164 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.misc.InputMappedClassifier -I -trim -W weka.classifiers.trees.J48 -- -C 0.25 -M 2
+Relation:     mmcfeatures-weka.filters.unsupervised.attribute.Remove-R4,6,10,12,18-19,21,23,25
+Instances:    801
+Attributes:   17
+              mood
+              danceability
+              energy
+              loudness
+              speechiness
+              acousticness
+              instrumentalness
+              valence
+              duration_ms
+              time_signature
+              track_duration
+              track_end_of_fade_in
+              track_start_of_fade_out
+              track_tempo_confidence
+              track_time_signature_confidence
+              track_key_confidence
+              track_mode_confidence
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+InputMappedClassifier:
+
+J48 pruned tree
+------------------
+
+energy <= 0.596
+|   speechiness <= 0.0535
+|   |   danceability <= 0.655: 0 (274.0/2.0)
+|   |   danceability > 0.655
+|   |   |   acousticness <= 0.0605: 1 (4.0)
+|   |   |   acousticness > 0.0605: 0 (17.0/1.0)
+|   speechiness > 0.0535
+|   |   track_time_signature_confidence <= 0.828: 0 (8.0)
+|   |   track_time_signature_confidence > 0.828
+|   |   |   acousticness <= 0.119: 1 (12.0)
+|   |   |   acousticness > 0.119
+|   |   |   |   track_time_signature_confidence <= 0.92: 1 (4.0)
+|   |   |   |   track_time_signature_confidence > 0.92
+|   |   |   |   |   danceability <= 0.708: 0 (10.0/1.0)
+|   |   |   |   |   danceability > 0.708
+|   |   |   |   |   |   energy <= 0.453: 1 (3.0)
+|   |   |   |   |   |   energy > 0.453
+|   |   |   |   |   |   |   energy <= 0.513: 0 (2.0)
+|   |   |   |   |   |   |   energy > 0.513: 1 (2.0)
+energy > 0.596
+|   valence <= 0.533
+|   |   speechiness <= 0.0434
+|   |   |   acousticness <= 0.0259
+|   |   |   |   danceability <= 0.489
+|   |   |   |   |   instrumentalness <= 0.000751: 0 (13.0)
+|   |   |   |   |   instrumentalness > 0.000751
+|   |   |   |   |   |   valence <= 0.402: 0 (3.0)
+|   |   |   |   |   |   valence > 0.402: 1 (2.0)
+|   |   |   |   danceability > 0.489
+|   |   |   |   |   speechiness <= 0.0292
+|   |   |   |   |   |   acousticness <= 0.00169: 1 (2.0)
+|   |   |   |   |   |   acousticness > 0.00169: 0 (6.0)
+|   |   |   |   |   speechiness > 0.0292
+|   |   |   |   |   |   track_mode_confidence <= 0.568: 1 (13.0)
+|   |   |   |   |   |   track_mode_confidence > 0.568
+|   |   |   |   |   |   |   energy <= 0.78: 1 (5.0/1.0)
+|   |   |   |   |   |   |   energy > 0.78: 0 (3.0)
+|   |   |   acousticness > 0.0259
+|   |   |   |   energy <= 0.825: 0 (38.0/1.0)
+|   |   |   |   energy > 0.825: 1 (2.0)
+|   |   speechiness > 0.0434
+|   |   |   danceability <= 0.606
+|   |   |   |   track_time_signature_confidence <= 0.773: 0 (4.0)
+|   |   |   |   track_time_signature_confidence > 0.773
+|   |   |   |   |   loudness <= -4.617
+|   |   |   |   |   |   track_key_confidence <= 0.607
+|   |   |   |   |   |   |   track_tempo_confidence <= 0.164: 0 (2.0)
+|   |   |   |   |   |   |   track_tempo_confidence > 0.164
+|   |   |   |   |   |   |   |   track_time_signature_confidence <= 0.998: 1 (8.0)
+|   |   |   |   |   |   |   |   track_time_signature_confidence > 0.998
+|   |   |   |   |   |   |   |   |   valence <= 0.448: 0 (4.0/1.0)
+|   |   |   |   |   |   |   |   |   valence > 0.448: 1 (3.0)
+|   |   |   |   |   |   track_key_confidence > 0.607
+|   |   |   |   |   |   |   energy <= 0.72: 1 (3.0/1.0)
+|   |   |   |   |   |   |   energy > 0.72: 0 (8.0)
+|   |   |   |   |   loudness > -4.617: 1 (13.0)
+|   |   |   danceability > 0.606
+|   |   |   |   acousticness <= 0.285: 1 (51.0)
+|   |   |   |   acousticness > 0.285
+|   |   |   |   |   track_end_of_fade_in <= 0: 0 (2.0)
+|   |   |   |   |   track_end_of_fade_in > 0: 1 (3.0)
+|   valence > 0.533
+|   |   track_mode_confidence <= 0.45: 1 (108.0)
+|   |   track_mode_confidence > 0.45
+|   |   |   danceability <= 0.66
+|   |   |   |   loudness <= -6.362
+|   |   |   |   |   danceability <= 0.634
+|   |   |   |   |   |   valence <= 0.766
+|   |   |   |   |   |   |   energy <= 0.833: 0 (5.0)
+|   |   |   |   |   |   |   energy > 0.833: 1 (2.0)
+|   |   |   |   |   |   valence > 0.766: 1 (7.0)
+|   |   |   |   |   danceability > 0.634: 0 (4.0)
+|   |   |   |   loudness > -6.362: 1 (54.0/5.0)
+|   |   |   danceability > 0.66: 1 (97.0/3.0)
+
+Number of Leaves  : 	38
+
+Size of the tree : 	75
+
+Attribute mappings:
+
+Model attributes                           	    Incoming attributes
+-------------------------------------------	    ----------------
+(nominal) mood                             	--> 1 (nominal) mood
+(numeric) danceability                     	--> 2 (numeric) danceability
+(numeric) energy                           	--> 3 (numeric) energy
+(numeric) loudness                         	--> 5 (numeric) loudness
+(numeric) speechiness                      	--> 7 (numeric) speechiness
+(numeric) acousticness                     	--> 8 (numeric) acousticness
+(numeric) instrumentalness                 	--> 9 (numeric) instrumentalness
+(numeric) valence                          	--> 11 (numeric) valence
+(numeric) duration_ms                      	--> 13 (numeric) duration_ms
+(numeric) time_signature                   	--> 14 (numeric) time_signature
+(numeric) track_duration                   	--> 15 (numeric) track_duration
+(numeric) track_end_of_fade_in             	--> 16 (numeric) track_end_of_fade_in
+(numeric) track_start_of_fade_out          	--> 17 (numeric) track_start_of_fade_out
+(numeric) track_tempo_confidence           	--> 20 (numeric) track_tempo_confidence
+(numeric) track_time_signature_confidence  	--> 22 (numeric) track_time_signature_confidence
+(numeric) track_key_confidence             	--> 24 (numeric) track_key_confidence
+(numeric) track_mode_confidence            	--> 26 (numeric) track_mode_confidence
+
+
+Time taken to build model: 0.01 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.1 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         174               87.8788 %
+Incorrectly Classified Instances        24               12.1212 %
+Kappa statistic                          0.7577
+Mean absolute error                      0.1353
+Root mean squared error                  0.3418
+Relative absolute error                 27.0517 %
+Root relative squared error             68.3428 %
+Total Number of Instances              198     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.908    0.150    0.856      0.908    0.881      0.759    0.849     0.803     0
+                 0.850    0.092    0.904      0.850    0.876      0.759    0.849     0.839     1
+Weighted Avg.    0.879    0.121    0.880      0.879    0.879      0.759    0.849     0.821     
+
+=== Confusion Matrix ===
+
+  a  b   <-- classified as
+ 89  9 |  a = 0
+ 15 85 |  b = 1
+
